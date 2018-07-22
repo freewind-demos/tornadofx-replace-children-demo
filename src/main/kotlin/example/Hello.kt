@@ -1,6 +1,5 @@
 package example
 
-import javafx.scene.layout.HBox
 import javafx.scene.layout.Pane
 import javafx.scene.layout.Priority
 import javafx.scene.layout.VBox
@@ -11,11 +10,11 @@ class HelloWorld : View() {
     private lateinit var mainPanel: Pane
     override val root = vbox {
         hbox {
-            button("Replace mainPanel to 'Hello'").setOnAction {
-                mainPanel.replaceWith(label("Hello"))
+            button("Replace children to 'Hello'").setOnAction {
+                mainPanel.replaceChildren(label("Hello"))
             }
-            button("Replace mainPanel to 'World'").setOnAction {
-                mainPanel.replaceWith(label("World"))
+            button("Replace children to 'World'").setOnAction {
+                mainPanel.replaceChildren(label("World"))
             }
         }
 

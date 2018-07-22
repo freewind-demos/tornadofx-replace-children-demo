@@ -1,6 +1,6 @@
-TornadoFX ReplaceWith Demo
-==========================
+TornadoFX ReplaceChildren Demo
+==============================
 
-A node can't `replaceWith` another node more than one time, since it's not exist anymore in the first time.
+We can replace the child of a node to other nodes multi times.
 
 Run `Hello.kt` from your IDE.
